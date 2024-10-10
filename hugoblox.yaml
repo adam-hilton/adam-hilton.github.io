@@ -1,2 +1,17 @@
 build:
   hugo_version: '0.126.3'
+
+cascade:
+  # Configure blog posts
+  - _target:
+      path: /post/**
+    pager: true
+    editable: false
+    reading_time: false
+    commentable: false
+    show_related: false
+    show_breadcrumb: true
+    share: true
+    header:
+      navbar:
+        enable: true
